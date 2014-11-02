@@ -1,5 +1,7 @@
+alias globaleval eval
 module Calc
+
   def self.eval(string)
-    string.to_i
+    globaleval(string)
   end
 end
