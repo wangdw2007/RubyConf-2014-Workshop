@@ -24,5 +24,17 @@ describe 'calc' do
     expect(Calc.eval('4/3')).to eq 1
   end
 
+  it 'should eval 3-5 to 0' do
+    expect(Calc.eval('3-5')).to eq 0
+  end
+
+  it 'should eval 1+1+1 to 3' do
+    expect(Calc.eval('1+1+1')).to eq 3
+  end
+
+  it 'should eval 3*2*2 to 12' do
+    expect(Calc.eval('3*2*2')).to eq 12
+  end
+
 
 end
